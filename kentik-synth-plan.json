@@ -4,7 +4,7 @@
     "quarterback-api"   : {
         "kentik-synth-api-url"          : "http://157.245.130.15/kentik-synth-api",
         "kentik-synth-control-header"   : "x-kentik-synth-key",
-        "kentik-synth-control-value"    : "ByTrP0UqJxmQ/lGmICQSBso/ILA674OZV+V0MobsWGs",
+        "kentik-synth-control-value"    : "AbWz3lahr81oHAld9S0hPaGajI1btnqEjBnAStlrAtE",
         "target-path"                   : "metrics+backup",
         "agent-step-seconds"            : "15",
         "agent-dead-after-seconds"      : "60",
