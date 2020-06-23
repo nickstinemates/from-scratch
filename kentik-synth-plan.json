@@ -1,0 +1,37 @@
+{
+    "config-version"    : "1",
+    "config-type"       : "kentik-synth-plan",
+    "quarterback-api"   : {
+        "kentik-synth-api-url"          : "http://157.245.130.15/kentik-synth-api",
+        "kentik-synth-control-header"   : "x-kentik-synth-key",
+        "kentik-synth-control-value"    : "ByTrP0UqJxmQ/lGmICQSBso/ILA674OZV+V0MobsWGs",
+        "target-path"                   : "metrics+backup",
+        "agent-step-seconds"            : "15",
+        "agent-dead-after-seconds"      : "60",
+        "concurrent-agents-per-host"    : "6"
+    },
+    "kentik-synth-agents" : {
+        "kentik-synth-a_icmp-ping" : {
+            "test-ms-at-failure"    : "10000",
+            "set-value-if-failure"  : "0",
+            "default-step-seconds"  : "10",
+            "metric-name"           : "ping_time",
+            "metric-class"          : "gauge"
+        }
+    },
+    "defined-targets" : {
+        "ping-127.0.0.1" :    {
+                                "agent"              : "kentik-synth-a_icmp-ping",
+                                "metric-path"        : "ping-127.0.0.1",
+                                "host-step-seconds"  : "5",
+                                "target-host"        : "127.0.0.1"
+        }
+    },
+
+    "common-targets" : [
+        "ping-127.0.0.1",
+    ],
+
+    "host-targets" : {
+    }
+}
